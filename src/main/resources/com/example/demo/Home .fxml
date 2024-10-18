@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="545.0" prefWidth="734.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.welcomecontrol">
+   <children>
+      <Pane prefHeight="563.0" prefWidth="760.0" style="-fx-background-color: #769be4;" AnchorPane.bottomAnchor="-18.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="-26.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Pane layoutX="83.0" layoutY="14.0" prefHeight="535.0" prefWidth="663.0">
+               <children>
+                  <Pane layoutX="108.0" layoutY="-233.0" prefHeight="342.0" prefWidth="200.0" rotate="-38.7" style="-fx-background-radius: 70; -fx-background-color: #a11071;" />
+                  <Button fx:id="btnp" layoutX="81.0" layoutY="188.0" mnemonicParsing="false" onAction="#openpatients" prefHeight="105.0" prefWidth="190.0" style="-fx-background-color: #eb9fd9; -fx-background-radius: 30;" text="Info About Patients" textFill="#1b181a">
+                     <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Button>
+                  <Button fx:id="btnd" layoutX="317.0" layoutY="188.0" mnemonicParsing="false" onAction="#opendoctors" prefHeight="105.0" prefWidth="190.0" style="-fx-background-color: #eb9fd9; -fx-background-radius: 30;" text="Info About Doctors" textFill="#1b181a">
+                     <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Button>
+                  <Button fx:id="btnb" layoutX="203.0" layoutY="323.0" mnemonicParsing="false" onAction="#medicaltips" prefHeight="105.0" prefWidth="190.0" style="-fx-background-color: #eb9fd9; -fx-background-radius: 30;" text="Medical Tips" textFill="#070707">
+                     <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Button>
+                  <Label layoutX="348.0" layoutY="64.0" prefHeight="27.0" prefWidth="159.0" text="Al shifaa Hospital" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="-17.0" layoutY="51.0" prefHeight="54.0" prefWidth="166.0" text="Welcome" textFill="#f2f2f2">
+                     <font>
+                        <Font name="System Bold Italic" size="37.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="145.0" fitWidth="124.0" layoutX="530.0" layoutY="168.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../images/دكك.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="112.0" fitWidth="139.0" layoutX="237.0" layoutY="428.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../images/transparent-stethoscope-medical-tools-clipboard-stethoscope-and-pen-usa65544167957f76.5974219517000205836123.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="122.0" fitWidth="124.0" layoutX="519.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../images/مست.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Button layoutX="14.0" layoutY="6.0" mnemonicParsing="false" onAction="#Back" prefHeight="48.0" prefWidth="81.0" style="-fx-background-color: #1b181a; -fx-background-radius: 50;" text="Back" textFill="#ff5a5a">
+               <font>
+                  <Font name="System Bold Italic" size="22.0" />
+               </font></Button>
+            <ImageView fitHeight="120.0" fitWidth="115.0" layoutX="26.0" layoutY="206.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../images/kisspng-computer-icons-hospital-bed-patient-health-care-image-icon-patient-free-5ab0a7f8357da4.6702328015215267762191.png" />
+               </image>
+            </ImageView>
+         </children></Pane>
+   </children>
+</AnchorPane>

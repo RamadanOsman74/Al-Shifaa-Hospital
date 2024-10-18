@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="578.0" prefWidth="759.0" style="-fx-background-color: #eb7272;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.patientFormCl">
+   <children>
+      <Pane layoutX="391.0" layoutY="21.0" prefHeight="548.0" prefWidth="365.0" style="-fx-background-color: #eec75a;">
+         <children>
+            <Label layoutX="91.0" layoutY="243.0" prefHeight="93.0" prefWidth="201.0" text="  patients" textFill="#e85050">
+               <font>
+                  <Font name="System Bold Italic" size="40.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtname" layoutX="23.0" layoutY="344.0" prefHeight="45.0" prefWidth="150.0" promptText="Enter Name " style="-fx-background-radius: 50;">
+               <font>
+                  <Font size="21.0" />
+               </font></TextField>
+            <TextField fx:id="txtid" layoutX="201.0" layoutY="344.0" prefHeight="45.0" prefWidth="150.0" promptText="Enter Id" style="-fx-background-radius: 50;">
+               <font>
+                  <Font size="21.0" />
+               </font></TextField>
+            <TextField fx:id="txtage" layoutX="201.0" layoutY="400.0" prefHeight="45.0" prefWidth="150.0" promptText="Enter Room" style="-fx-background-radius: 50;">
+               <font>
+                  <Font size="21.0" />
+               </font></TextField>
+            <TextField fx:id="txtgender" layoutX="23.0" layoutY="400.0" prefHeight="45.0" prefWidth="150.0" promptText="Enter State" style="-fx-background-radius: 50;">
+               <font>
+                  <Font size="21.0" />
+               </font></TextField>
+            <Button fx:id="lbladd" layoutX="38.0" layoutY="468.0" mnemonicParsing="false" onAction="#add" prefHeight="50.0" prefWidth="120.0" style="-fx-background-radius: 50; -fx-background-color: #eb7272;" text="ADD" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Button>
+            <Button fx:id="lblremove" layoutX="216.0" layoutY="468.0" mnemonicParsing="false" onAction="#delete" prefHeight="50.0" prefWidth="120.0" style="-fx-background-radius: 50; -fx-background-color: #eb7272;" text="REMOVE" textFill="#fcfcfc">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="308.0" fitWidth="248.0" layoutX="59.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../images/kisspng-computer-icons-hospital-bed-patient-health-care-image-icon-patient-free-5ab0a7f8357da4.6702328015215267762191.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="284.0" layoutY="7.0" mnemonicParsing="false" onAction="#Back" prefHeight="45.0" prefWidth="74.0" style="-fx-background-color: #000000; -fx-background-radius: 50;" text="Back" textFill="#ff6b6b">
+               <font>
+                  <Font name="System Bold Italic" size="19.0" />
+               </font></Button>
+         </children></Pane>
+      <BorderPane layoutX="26.0" layoutY="24.0" onMouseClicked="#clicktable" prefHeight="542.0" prefWidth="354.0">
+         <center>
+            <TableView fx:id="table" onMouseClicked="#clicktable" prefHeight="526.0" prefWidth="327.0" BorderPane.alignment="CENTER">
+              <columns>
+                <TableColumn fx:id="idp" minWidth="5.0" prefWidth="63.0" text="ID" />
+                <TableColumn fx:id="namep" prefWidth="115.0" text="Name" />
+                  <TableColumn fx:id="agep" prefWidth="58.0" text="Room" />
+                  <TableColumn fx:id="genderp" prefWidth="117.0" text="State" />
+              </columns>
+            </TableView>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

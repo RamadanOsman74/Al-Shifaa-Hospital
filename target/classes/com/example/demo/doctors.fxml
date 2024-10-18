@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="580.0" prefWidth="775.0" style="-fx-background-color: #eb7272;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.doctorsFormCl">
+   <children>
+      <Pane layoutX="426.0" layoutY="10.0" prefHeight="561.0" prefWidth="347.0" style="-fx-background-color: #eec75a;">
+         <children>
+            <ImageView fitHeight="283.0" fitWidth="155.0" layoutX="88.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../images/doc.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="69.0" layoutY="283.0" prefHeight="17.0" prefWidth="184.0" text="  Doctors" textFill="#e85050">
+               <font>
+                  <Font name="System Bold Italic" size="43.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtname" layoutX="19.0" layoutY="347.0" prefHeight="50.0" prefWidth="147.0" promptText="Enter Name" style="-fx-background-radius: 20;">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtid" layoutX="182.0" layoutY="347.0" prefHeight="50.0" prefWidth="156.0" promptText="Enter Id" style="-fx-background-radius: 20;">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtage" layoutX="100.0" layoutY="405.0" prefHeight="50.0" prefWidth="147.0" promptText="Enter Office" style="-fx-background-radius: 20;">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </TextField>
+            <Button fx:id="btnadd" layoutX="36.0" layoutY="474.0" mnemonicParsing="false" onAction="#add" prefHeight="50.0" prefWidth="112.0" style="-fx-background-radius: 50; -fx-background-color: #eb7272;" text="ADD" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnremove" layoutX="193.0" layoutY="474.0" mnemonicParsing="false" onAction="#delete" prefHeight="50.0" prefWidth="112.0" style="-fx-background-radius: 50; -fx-background-color: #eb7272;" text="REMOVE" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Button>
+            <Button layoutX="266.0" layoutY="7.0" mnemonicParsing="false" onAction="#Back" prefHeight="45.0" prefWidth="79.0" style="-fx-background-color: #1b181a; -fx-background-radius: 50;" text="Back" textFill="#eb4d4d">
+               <font>
+                  <Font name="System Bold Italic" size="21.0" />
+               </font></Button>
+         </children></Pane>
+      <TableView fx:id="table" layoutX="9.0" layoutY="10.0" onMouseClicked="#clicktable" prefHeight="561.0" prefWidth="408.0">
+        <columns>
+          <TableColumn fx:id="idd" prefWidth="83.0" text="Id" />
+          <TableColumn fx:id="named" prefWidth="204.0" text="Name" />
+            <TableColumn fx:id="aged" prefWidth="120.0" text="Office" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

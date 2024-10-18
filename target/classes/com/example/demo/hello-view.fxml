@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="519.0" prefWidth="764.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.LoginForm_CL">
+   <children>
+      <Pane prefHeight="220.0" prefWidth="793.0" style="-fx-background-color: yellow;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="508.0" layoutY="169.0" prefHeight="40.0" prefWidth="256.0" text="Al Shifaa Hospital" textFill="#eb2121" textOverrun="CENTER_WORD_ELLIPSIS">
+               <font>
+                  <Font name="System Bold Italic" size="28.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="E_RESIZE" />
+               </cursor>
+            </Label>
+            <ImageView fitHeight="110.0" fitWidth="370.0" layoutX="-110.0" layoutY="-74.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../images/pexels-faheem-ahamad-16732847.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="154.0" layoutY="131.0" prefHeight="26.0" prefWidth="256.0" text=" مستشفي الشفاء بغزة - فلسطين    " textFill="#e10e0e">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="125.0" layoutY="84.0" prefHeight="47.0" prefWidth="314.0" text="وَإِذَا مَرِضْتُ فَهُوَ يَشْفِيْنِ" textFill="#0348e8">
+               <font>
+                  <Font name="System Bold" size="32.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="177.0" fitWidth="180.0" layoutX="546.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../images/مست.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane layoutY="220.0" prefHeight="339.0" prefWidth="824.0" style="-fx-background-color: #2f9799;" AnchorPane.bottomAnchor="1.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="220.0">
+         <children>
+            <TextField fx:id="txtUser" layoutX="130.0" layoutY="29.0" prefHeight="54.0" prefWidth="237.0" promptText="Enter User Name">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+            </TextField>
+            <Button layoutX="170.0" layoutY="199.0" mnemonicParsing="false" onAction="#isSign" prefHeight="62.0" prefWidth="158.0" style="-fx-background-color: yellow; -fx-background-radius: 70;" text="Login">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font></Button>
+            <Label fx:id="lblMSG" layoutX="155.0" layoutY="172.0" prefHeight="17.0" prefWidth="187.0" textFill="#ee0c0c" />
+            <PasswordField fx:id="pass" layoutX="130.0" layoutY="109.0" onAction="#isSign" prefHeight="54.0" prefWidth="237.0" promptText="Enter Password">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font></PasswordField>
+            <ImageView fitHeight="375.0" fitWidth="421.0" layoutX="396.0" layoutY="-31.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../images/kisspng-physician-nursing-hospital-nurse-vector-doctors-and-nurses-5a7b8d3623fc66.4608360015180465181474.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
